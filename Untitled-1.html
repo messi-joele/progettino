@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convertitore di Misure</title>
+  <style>
+ 
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .converter-container {
+      margin: 20px auto;
+      width: 300px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .input-field {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .input-field label {
+      width: 60px;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    .input-field input[type="number"] {
+      flex: 1;
+    }
+
+    .input-field select {
+      width: 80px;
+    }
+
+    .result {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Convertitore di Misure e valute</h1>
+
+  <div class="converter-container">
+    <div class="input-field">
+      <label>Valore:</label>
+      <input type="number" id="value-input">
+    </div>
+
+    <div class="input-field">
+      <label>Unità di Misura:</label>
+      <select id="unit-select">
+        <option value="cm">cm</option>
+        <option value="m">m</option>
+        <option value="mm">mm</option>
+        <option value="dm">dm</option>
+        <option value="inch">inch</option>
+        <option value="kg">kg</option>
+        <option value="hg">hg</option>
+        <option value="g">g</option>
+        <option value="lb">lb</option>
+        <option value="usd">dollaro</option>
+        <option value="eur">euro</option>
+        <option value="yen">yen</option>
+        <option value="rupia">rupia</option>
+        <option value="sterlina">sterlina</option>
+        <option value="peso">peso</option>
+      </select>
+    </div>
+
+    <div class="input-field">
+      <label>Converti in:</label>
+      <select id="target-unit-select">
+        <option value="cm">cm</option>
+        <option value="m">m</option>
+        <option value="mm">mm</option>
+        <option value="dm">dm</option>
+        <option value="inch">inch</option>
+        <option value="kg">kg</option>
+        <option value="hg">hg</option>
+        <option value="g">g</option>
+        <option value="lb">lb</option>
+        <option value="usd">dollaro</option>
+        <option value="eur">euro</option>
+        <option value="yen">yen</option>
+        <option value="rupia">rupia</option>
+        <option value="sterlina">sterlina</option>
+        <option value="peso">peso</option>
+      </select>
+    </div>
+
+    <button onclick="convert()">Converti</button>
+
+    <div class="result" id="result"></div>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
